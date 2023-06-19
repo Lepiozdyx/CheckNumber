@@ -13,7 +13,7 @@ struct SliderView: View {
     var body: some View {
         HStack {
             Text("0")
-            Slider(value: $value, in: 0...100, step: 1)
+            UISliderRepresentation(value: $value)
             Text("100")
         }
     }

@@ -17,7 +17,7 @@ struct ContentView: View {
             SliderView(value: $dataManager.data.currentValue)
                 .padding(.bottom, 30)
             
-            ButtonView(title: "Проверь меня!", action: showAlert)
+            ButtonView(title: "Проверь меня!", action: { isPresented.toggle() })
                 .alert(
                     "Ваш результат",
                     isPresented: $isPresented,
@@ -29,10 +29,6 @@ struct ContentView: View {
             ButtonView(title: "Начать заново", action: dataManager.startOver)
         }
         .padding()
-    }
-    
-    private func showAlert() {
-        isPresented.toggle()
     }
 }
 

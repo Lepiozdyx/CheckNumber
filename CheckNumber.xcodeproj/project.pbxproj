@@ -11,6 +11,8 @@
 		FA2B7EC12A40D4F50028986F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7EC02A40D4F50028986F /* ContentView.swift */; };
 		FA2B7EC32A40D4F60028986F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2B7EC22A40D4F60028986F /* Assets.xcassets */; };
 		FA2B7EC62A40D4F60028986F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2B7EC52A40D4F60028986F /* Preview Assets.xcassets */; };
+		FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECC2A40DC620028986F /* SliderView.swift */; };
+		FA2B7ECF2A40DE470028986F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECE2A40DE470028986F /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		FA2B7EC02A40D4F50028986F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA2B7EC22A40D4F60028986F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2B7EC52A40D4F60028986F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA2B7ECC2A40DC620028986F /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		FA2B7ECE2A40DE470028986F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				FA2B7EBE2A40D4F50028986F /* CheckNumberApp.swift */,
 				FA2B7EC02A40D4F50028986F /* ContentView.swift */,
+				FA2B7ECE2A40DE470028986F /* ButtonView.swift */,
+				FA2B7ECC2A40DC620028986F /* SliderView.swift */,
 				FA2B7EC22A40D4F60028986F /* Assets.xcassets */,
 				FA2B7EC42A40D4F60028986F /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */,
 				FA2B7EC12A40D4F50028986F /* ContentView.swift in Sources */,
+				FA2B7ECF2A40DE470028986F /* ButtonView.swift in Sources */,
 				FA2B7EBF2A40D4F50028986F /* CheckNumberApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

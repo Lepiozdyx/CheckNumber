@@ -13,8 +13,6 @@
 		FA2B7EC62A40D4F60028986F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2B7EC52A40D4F60028986F /* Preview Assets.xcassets */; };
 		FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECC2A40DC620028986F /* SliderView.swift */; };
 		FA2B7ECF2A40DE470028986F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECE2A40DE470028986F /* ButtonView.swift */; };
-		FA2B7ED12A4106610028986F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED02A4106610028986F /* DataManager.swift */; };
-		FA2B7ED32A410D690028986F /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED22A410D690028986F /* Number.swift */; };
 		FA2B7ED82A41152E0028986F /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +24,6 @@
 		FA2B7EC52A40D4F60028986F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA2B7ECC2A40DC620028986F /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		FA2B7ECE2A40DE470028986F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		FA2B7ED02A4106610028986F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		FA2B7ED22A410D690028986F /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +59,6 @@
 			children = (
 				FA2B7EBE2A40D4F50028986F /* CheckNumberApp.swift */,
 				FA2B7ED62A4111580028986F /* Views */,
-				FA2B7ED52A4111470028986F /* Services */,
-				FA2B7ED42A41113C0028986F /* Models */,
 				FA2B7EC22A40D4F60028986F /* Assets.xcassets */,
 				FA2B7EC42A40D4F60028986F /* Preview Content */,
 			);
@@ -77,22 +71,6 @@
 				FA2B7EC52A40D4F60028986F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FA2B7ED42A41113C0028986F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FA2B7ED22A410D690028986F /* Number.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FA2B7ED52A4111470028986F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				FA2B7ED02A4106610028986F /* DataManager.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		FA2B7ED62A4111580028986F /* Views */ = {
@@ -177,8 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */,
-				FA2B7ED32A410D690028986F /* Number.swift in Sources */,
-				FA2B7ED12A4106610028986F /* DataManager.swift in Sources */,
 				FA2B7ED82A41152E0028986F /* UISliderRepresentation.swift in Sources */,
 				FA2B7EC12A40D4F50028986F /* ContentView.swift in Sources */,
 				FA2B7ECF2A40DE470028986F /* ButtonView.swift in Sources */,

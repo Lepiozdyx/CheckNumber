@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var dataManager = DataManager()
+    @State private var targetValue = Int.random(in: 0...100)
+    @State private var currentValue = 0.0
     @State private var isPresented = false
     
     var body: some View {
         VStack(spacing: 30) {
-            Text("Подвиньте слайдер как можно ближе к: \(dataManager.number.targetValue)")
-            SliderView(value: $dataManager.number.currentValue, dataManager: dataManager)
+            Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
+            SliderView(value: $currentValue, targetValue: targetValue, alpha: Float(computeScore()))
                 .padding(.bottom, 30)
             
             ButtonView(title: "Проверь меня!") {
@@ -25,12 +26,22 @@ struct ContentView: View {
                 isPresented: $isPresented,
                 actions: {}
             ) {
-                Text("\(dataManager.computeScore())")
+                Text("\(computeScore())")
             }
             
-            ButtonView(title: "Начать заново", action: dataManager.startOver)
+            ButtonView(title: "Начать заново", action: startOver)
         }
         .padding()
+    }
+    
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(currentValue))
+        return 100 - difference
+    }
+    
+    private func startOver() {
+        targetValue = Int.random(in: 0...100)
+        currentValue = 0.0
     }
 }
 

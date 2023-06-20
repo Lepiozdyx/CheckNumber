@@ -15,7 +15,11 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 30) {
             Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
-            SliderView(value: $currentValue, targetValue: targetValue, alpha: Float(computeScore()))
+            SliderView(
+                value: $currentValue,
+                targetValue: targetValue,
+                alpha: Float(computeScore())
+            )
                 .padding(.bottom, 30)
             
             ButtonView(title: "Проверь меня!") {

@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-   @StateObject private var dataManager = DataManager()
+    @StateObject private var dataManager = DataManager()
     @State private var isPresented = false
     
     var body: some View {
         VStack(spacing: 30) {
             Text("Подвиньте слайдер как можно ближе к: \(dataManager.data.targetValue)")
-            SliderView(value: $dataManager.data.currentValue)
+            SliderView(value: $dataManager.data.currentValue, dataManager: dataManager)
                 .padding(.bottom, 30)
             
             ButtonView(title: "Проверь меня!", action: { isPresented.toggle() })

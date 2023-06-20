@@ -9,11 +9,12 @@ import SwiftUI
 
 struct SliderView: View {
     @Binding var value: Double
+    @ObservedObject var dataManager: DataManager
     
     var body: some View {
         HStack {
             Text("0")
-            UISliderRepresentation(value: $value)
+            UISliderRepresentation(value: $value, dataManager: dataManager)
             Text("100")
         }
     }
@@ -21,6 +22,6 @@ struct SliderView: View {
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(value: .constant(23))
+        SliderView(value: .constant(23), dataManager: DataManager())
     }
 }

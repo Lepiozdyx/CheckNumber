@@ -8,15 +8,15 @@
 import Foundation
 
 final class DataManager: ObservableObject {
-    @Published var data = Data()
+    @Published var number = Number()
     
     func computeScore() -> Int {
-        let difference = abs(data.targetValue - lround(data.currentValue))
+        let difference = abs(number.targetValue - lround(number.currentValue))
         return 100 - difference
     }
     
     func startOver() {
-        data.targetValue = Int.random(in: 0...100)
-        data.currentValue = 0.0
+        number.targetValue = Int.random(in: 0...100)
+        number.currentValue = 0.0
     }
 }

@@ -13,18 +13,20 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            Text("Подвиньте слайдер как можно ближе к: \(dataManager.data.targetValue)")
-            SliderView(value: $dataManager.data.currentValue, dataManager: dataManager)
+            Text("Подвиньте слайдер как можно ближе к: \(dataManager.number.targetValue)")
+            SliderView(value: $dataManager.number.currentValue, dataManager: dataManager)
                 .padding(.bottom, 30)
             
-            ButtonView(title: "Проверь меня!", action: { isPresented.toggle() })
-                .alert(
-                    "Ваш результат",
-                    isPresented: $isPresented,
-                    actions: {}
-                ) {
-                    Text("\(dataManager.computeScore())")
-                }
+            ButtonView(title: "Проверь меня!") {
+                isPresented.toggle()
+            }
+            .alert(
+                "Ваш результат",
+                isPresented: $isPresented,
+                actions: {}
+            ) {
+                Text("\(dataManager.computeScore())")
+            }
             
             ButtonView(title: "Начать заново", action: dataManager.startOver)
         }

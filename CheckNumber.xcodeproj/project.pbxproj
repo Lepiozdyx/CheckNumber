@@ -14,7 +14,7 @@
 		FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECC2A40DC620028986F /* SliderView.swift */; };
 		FA2B7ECF2A40DE470028986F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECE2A40DE470028986F /* ButtonView.swift */; };
 		FA2B7ED12A4106610028986F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED02A4106610028986F /* DataManager.swift */; };
-		FA2B7ED32A410D690028986F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED22A410D690028986F /* Data.swift */; };
+		FA2B7ED32A410D690028986F /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED22A410D690028986F /* Number.swift */; };
 		FA2B7ED82A41152E0028986F /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		FA2B7ECC2A40DC620028986F /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		FA2B7ECE2A40DE470028986F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FA2B7ED02A4106610028986F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		FA2B7ED22A410D690028986F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FA2B7ED22A410D690028986F /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +82,7 @@
 		FA2B7ED42A41113C0028986F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FA2B7ED22A410D690028986F /* Data.swift */,
+				FA2B7ED22A410D690028986F /* Number.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */,
-				FA2B7ED32A410D690028986F /* Data.swift in Sources */,
+				FA2B7ED32A410D690028986F /* Number.swift in Sources */,
 				FA2B7ED12A4106610028986F /* DataManager.swift in Sources */,
 				FA2B7ED82A41152E0028986F /* UISliderRepresentation.swift in Sources */,
 				FA2B7EC12A40D4F50028986F /* ContentView.swift in Sources */,

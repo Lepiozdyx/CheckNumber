@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		FA2B7EBF2A40D4F50028986F /* CheckNumberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7EBE2A40D4F50028986F /* CheckNumberApp.swift */; };
-		FA2B7EC12A40D4F50028986F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7EC02A40D4F50028986F /* ContentView.swift */; };
+		FA2B7EC12A40D4F50028986F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7EC02A40D4F50028986F /* GameView.swift */; };
 		FA2B7EC32A40D4F60028986F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2B7EC22A40D4F60028986F /* Assets.xcassets */; };
 		FA2B7EC62A40D4F60028986F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2B7EC52A40D4F60028986F /* Preview Assets.xcassets */; };
 		FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECC2A40DC620028986F /* SliderView.swift */; };
-		FA2B7ECF2A40DE470028986F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ECE2A40DE470028986F /* ButtonView.swift */; };
 		FA2B7ED82A41152E0028986F /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */; };
+		FAAD538E2A44FB3E00715F1A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD538D2A44FB3E00715F1A /* GameViewModel.swift */; };
+		FAAD53902A44FB4A00715F1A /* GameOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD538F2A44FB4A00715F1A /* GameOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA2B7EBB2A40D4F50028986F /* CheckNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2B7EBE2A40D4F50028986F /* CheckNumberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNumberApp.swift; sourceTree = "<group>"; };
-		FA2B7EC02A40D4F50028986F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA2B7EC02A40D4F50028986F /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		FA2B7EC22A40D4F60028986F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2B7EC52A40D4F60028986F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA2B7ECC2A40DC620028986F /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
-		FA2B7ECE2A40DE470028986F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
+		FAAD538D2A44FB3E00715F1A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		FAAD538F2A44FB4A00715F1A /* GameOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,9 @@
 		FA2B7EBD2A40D4F50028986F /* CheckNumber */ = {
 			isa = PBXGroup;
 			children = (
-				FA2B7EBE2A40D4F50028986F /* CheckNumberApp.swift */,
+				FAAD53912A44FC6700715F1A /* App */,
+				FAAD53932A45013800715F1A /* Models */,
+				FAAD53922A44FC7500715F1A /* GameView */,
 				FA2B7ED62A4111580028986F /* Views */,
 				FA2B7EC22A40D4F60028986F /* Assets.xcassets */,
 				FA2B7EC42A40D4F60028986F /* Preview Content */,
@@ -76,12 +80,35 @@
 		FA2B7ED62A4111580028986F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA2B7EC02A40D4F50028986F /* ContentView.swift */,
-				FA2B7ECE2A40DE470028986F /* ButtonView.swift */,
 				FA2B7ECC2A40DC620028986F /* SliderView.swift */,
 				FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FAAD53912A44FC6700715F1A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA2B7EBE2A40D4F50028986F /* CheckNumberApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAAD53922A44FC7500715F1A /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				FA2B7EC02A40D4F50028986F /* GameView.swift */,
+				FAAD538D2A44FB3E00715F1A /* GameViewModel.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		FAAD53932A45013800715F1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD538F2A44FB4A00715F1A /* GameOptions.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAD53902A44FB4A00715F1A /* GameOptions.swift in Sources */,
 				FA2B7ECD2A40DC620028986F /* SliderView.swift in Sources */,
 				FA2B7ED82A41152E0028986F /* UISliderRepresentation.swift in Sources */,
-				FA2B7EC12A40D4F50028986F /* ContentView.swift in Sources */,
-				FA2B7ECF2A40DE470028986F /* ButtonView.swift in Sources */,
+				FA2B7EC12A40D4F50028986F /* GameView.swift in Sources */,
+				FAAD538E2A44FB3E00715F1A /* GameViewModel.swift in Sources */,
 				FA2B7EBF2A40D4F50028986F /* CheckNumberApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

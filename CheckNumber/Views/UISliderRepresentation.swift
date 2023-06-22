@@ -10,17 +10,17 @@ import SwiftUI
 struct UISliderRepresentation: UIViewRepresentable {
     @Binding var value: Double
     
-    let alpha: Float
+    let alpha: Double
+    let color: UIColor
     
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
-        
         slider.minimumValue = 0
         slider.maximumValue = 100
-        slider.value = 0
+        
         slider.addTarget(
             context.coordinator,
-            action: #selector(Coordinator.sliderValueHasChanged),
+            action: #selector(Coordinator.valueHasChanged),
             for: .valueChanged
         )
         
@@ -29,12 +29,7 @@ struct UISliderRepresentation: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(value)
-        uiView.thumbTintColor = UIColor(
-            red: 1,
-            green: 0,
-            blue: 0,
-            alpha: CGFloat(alpha / 100)
-        )
+        uiView.thumbTintColor = color.withAlphaComponent(alpha)
     }
     
     func makeCoordinator() -> Coordinator {
@@ -52,7 +47,7 @@ extension UISliderRepresentation {
             self._value = value
         }
         
-        @objc func sliderValueHasChanged(_ sender: UISlider) {
+        @objc func valueHasChanged(_ sender: UISlider) {
             value = Double(sender.value)
         }
     }

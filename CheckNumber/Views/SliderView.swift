@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct SliderView: View {
-    @Binding var value: Double
-    
-    let targetValue: Int
-    let alpha: Float
+    @ObservedObject var gameViewModel: GameViewModel
+    var color: UIColor
     
     var body: some View {
-        HStack {
-            Text("0")
-            UISliderRepresentation(value: $value, alpha: alpha)
-            Text("100")
+        VStack(spacing: 30) {
+            let targetValue = gameViewModel.gameOptions.targetValue
+            Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
+            HStack {
+                Text("0")
+                UISliderRepresentation(
+                    value: $gameViewModel.gameOptions.currentValue,
+                    alpha: gameViewModel.alpha,
+                    color: color
+                )
+                Text("100")
+            }
         }
     }
 }
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(value: .constant(23), targetValue: 50, alpha: 1)
+        SliderView(gameViewModel: GameViewModel(), color: .red)
     }
 }

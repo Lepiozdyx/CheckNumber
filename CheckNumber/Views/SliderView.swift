@@ -14,7 +14,7 @@ struct SliderView: View {
     var body: some View {
         VStack(spacing: 30) {
             let targetValue = gameViewModel.gameOptions.targetValue
-            Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
+            Text("Move the slider as close as possible to: \(targetValue)")
             HStack {
                 Text("0")
                 UISliderRepresentation(

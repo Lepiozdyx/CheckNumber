@@ -15,16 +15,16 @@ struct GameView: View {
             SliderView(gameViewModel: gameViewModel, color: .red)
                 .padding(.bottom, 30)
             
-            Button("Проверь меня!", action: gameViewModel.showAlert)
+            Button("Test me!", action: gameViewModel.showAlert)
             .alert(
-                "Ваш результат",
+                "Your result",
                 isPresented: $gameViewModel.alertIsPresented,
                 actions: {}
             ) {
                 Text(gameViewModel.scores)
             }
             
-            Button("Начать заново", action: gameViewModel.reset)
+            Button("Restart", action: gameViewModel.reset)
         }
         .padding()
     }

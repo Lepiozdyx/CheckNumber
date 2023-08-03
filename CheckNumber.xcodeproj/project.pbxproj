@@ -61,8 +61,8 @@
 			children = (
 				FAAD53912A44FC6700715F1A /* App */,
 				FAAD53932A45013800715F1A /* Models */,
-				FAAD53922A44FC7500715F1A /* GameView */,
 				FA2B7ED62A4111580028986F /* Views */,
+				FAAD53922A44FC7500715F1A /* ViewModels */,
 				FA2B7EC22A40D4F60028986F /* Assets.xcassets */,
 				FA2B7EC42A40D4F60028986F /* Preview Content */,
 			);
@@ -80,6 +80,7 @@
 		FA2B7ED62A4111580028986F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA2B7EC02A40D4F50028986F /* GameView.swift */,
 				FA2B7ECC2A40DC620028986F /* SliderView.swift */,
 				FA2B7ED72A41152E0028986F /* UISliderRepresentation.swift */,
 			);
@@ -94,13 +95,12 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		FAAD53922A44FC7500715F1A /* GameView */ = {
+		FAAD53922A44FC7500715F1A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				FA2B7EC02A40D4F50028986F /* GameView.swift */,
 				FAAD538D2A44FB3E00715F1A /* GameViewModel.swift */,
 			);
-			path = GameView;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		FAAD53932A45013800715F1A /* Models */ = {
